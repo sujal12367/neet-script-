@@ -1,49 +1,24 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEET SCRIPT</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<header>
-  <h1>NEET SCRIPT</h1>
-  <p>Your NEET Biology Companion</p>
-</header>
+<div class="container">
+  <header>
+    <h1>NEET SCRIPT</h1>
+    <p>NCERT Biology Notes</p>
+  </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#study">Study</a>
-</nav>
+  <h2>Choose Your Class</h2>
 
-<main>
-  <section id="home">
-    <h2>Learn Biology. Think Beyond NCERT.</h2>
-    <p>Your journey towards better Biology concepts starts here.</p>
-    <button onclick="showMessage()">Explore NEET Script</button>
-    <p id="message"></p>
-  </section>
+  <div class="class-buttons">
+    <button onclick="showChapters(11)">Class 11</button>
+    <button onclick="showChapters(12)">Class 12</button>
+  </div>
 
-  <section id="about">
-    <h2>About NEET SCRIPT</h2>
-    <p>A student-created educational platform for NEET Biology learners.</p>
-  </section>
+  <h2>Biology Chapters</h2>
+  <div id="chapterList"></div>
 
-  <section id="study">
-    <h2>Study Biology</h2>
-    <p>Learn NCERT concepts and practice Biology MCQs.</p>
-  </section>
-</main>
-
-<footer>
-  <p>© 2026 NEET SCRIPT | Student Project</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-    </html>
+  <div id="notes">
+    <h2>Welcome to NEET SCRIPT</h2>
+    <p>Select a class and chapter to read notes.</p>
+  </div>
+</div>
 
