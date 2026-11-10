@@ -1,116 +1,56 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #0b1120;
-  color: #f1f5f9;
-  line-height: 1.6;
-}
-
-header {
-  background: #111c32;
-  padding: 25px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #334155;
-}
-
-header h1 {
-  font-size: 30px;
-  color: #38bdf8;
-}
-
-header p {
-  color: #cbd5e1;
-}
-
-nav {
-  background: #17243b;
-  padding: 16px;
-  text-align: center;
-}
-
-nav a {
+  background: #0b1220;
   color: white;
-  text-decoration: none;
-  margin: 12px;
-  font-weight: bold;
 }
 
-nav a:hover {
-  color: #38bdf8;
-}
-
-main {
-  max-width: 1000px;
-  margin: 35px auto;
+.container {
+  max-width: 750px;
+  margin: auto;
   padding: 20px;
 }
 
-section {
-  background: #14213a;
-  padding: 35px 25px;
-  margin-bottom: 25px;
-  border-radius: 15px;
-  border: 1px solid #263b59;
+header {
+  text-align: center;
+  background: #142c4e;
+  padding: 20px;
+  border-radius: 12px;
 }
 
-section h2 {
-  font-size: 28px;
+h1 {
   color: #38bdf8;
-  margin-bottom: 15px;
-}
-
-section p {
-  color: #dbeafe;
-  margin-bottom: 15px;
 }
 
 button {
-  background: #38bdf8;
-  color: #0b1120;
-  padding: 13px 22px;
+  background: #087eaf;
+  color: white;
   border: none;
+  padding: 12px 20px;
+  margin: 5px;
   border-radius: 8px;
-  font-weight: bold;
   cursor: pointer;
 }
 
-button:hover {
-  background: #7dd3fc;
+.chapter {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #1e293b;
+  margin: 8px 0;
 }
 
-footer {
-  text-align: center;
-  background: #111c32;
-  padding: 25px;
-  color: #cbd5e1;
-  margin-top: 40px;
+#notes {
+  background: #172338;
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 12px;
+  line-height: 1.7;
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
+#notes h2 {
+  color: #38bdf8;
+}
 
-  nav a {
-    display: inline-block;
-    margin: 6px;
-  }
-
-  section h2 {
-    font-size: 23px;
-  }
-  }
 
