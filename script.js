@@ -82,3 +82,48 @@ function openChapterNotes(chapterName) {
     <p>NCERT-based notes will be available here.</p>
   `;
 }
+// NEET SCRIPT - Biology Notes Database
+
+const biologyNotes = {
+  "The Living World": `
+    <h3>1. What is Living?</h3>
+    <p>Living organisms show growth, reproduction and metabolism.</p>
+
+    <h3>2. Growth</h3>
+    <p>Growth is an increase in mass and number of cells.</p>
+
+    <h3>3. Reproduction</h3>
+    <p>Reproduction is the biological process of producing offspring.</p>
+
+    <h3>4. Metabolism</h3>
+    <p>All chemical reactions occurring in the body are called metabolism.</p>
+  `,
+
+  "Biological Classification": `
+    <h3>Five Kingdom Classification</h3>
+    <p>R.H. Whittaker proposed the five kingdom classification in 1969.</p>
+
+    <h3>Five Kingdoms</h3>
+    <ul>
+      <li>Monera</li>
+      <li>Protista</li>
+      <li>Fungi</li>
+      <li>Plantae</li>
+      <li>Animalia</li>
+    </ul>
+  `
+};
+
+const originalOpenChapterNotes = openChapterNotes;
+
+openChapterNotes = function(chapterName) {
+  const area = document.getElementById("chapterList");
+
+  area.innerHTML = `
+    <h2>${chapterName}</h2>
+    ${biologyNotes[chapterName] || "<p>Notes coming soon!</p>"}
+    <br>
+    <button onclick="showClass(11)">Back to Class 11</button>
+    <button onclick="showClass(12)">Back to Class 12</button>
+  `;
+};
