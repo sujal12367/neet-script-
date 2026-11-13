@@ -63,7 +63,7 @@ function showClass(classNumber) {
   });
 }
 
-function showNotes(chapter) {
+openChapterNotes(chapter);
   document.getElementById("chapterList").innerHTML = `
     <h2>${chapter}</h2>
     <p>Notes for this chapter will be added soon.</p>
