@@ -1,24 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEET SCRIPT | Biology Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="container">
-  <header>
-    <h1>NEET SCRIPT</h1>
-    <p>NCERT Biology Notes</p>
-  </header>
+<header>
+  <h1>NEET SCRIPT</h1>
+  <p>LEARN • PRACTICE • MASTER</p>
+</header>
 
+<nav>
+  <a href="#home">Home</a>
+  <a href="#classes">Classes</a>
+  <a href="#about">About</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2>Biology Made Simple.</h2>
+  <p>Your NCERT companion for NEET preparation.</p>
+  <a class="btn" href="#classes">Explore Chapters</a>
+</section>
+
+<section id="classes">
   <h2>Choose Your Class</h2>
 
-  <div class="class-buttons">
-    <button onclick="showChapters(11)">Class 11</button>
-    <button onclick="showChapters(12)">Class 12</button>
-  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Class 11</h3>
+      <p>Explore Class 11 Biology</p>
+      <button onclick="showClass(11)">Explore</button>
+    </div>
 
+    <div class="card">
+      <h3>Class 12</h3>
+      <p>Explore Class 12 Biology</p>
+      <button onclick="showClass(12)">Explore</button>
+    </div>
+  </div>
+</section>
+
+<section id="chapters">
   <h2>Biology Chapters</h2>
-  <div id="chapterList"></div>
-
-  <div id="notes">
-    <h2>Welcome to NEET SCRIPT</h2>
-    <p>Select a class and chapter to read notes.</p>
+  <div id="chapterList">
+    Select your class to see chapters.
   </div>
-</div>
+</section>
+
+<section id="about">
+  <h2>About NEET SCRIPT</h2>
+  <p>A student-made platform for NCERT-based Biology learning.</p>
+</section>
+
+<footer>
+  <p>© 2026 NEET SCRIPT | Made for Learning</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
 
