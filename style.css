@@ -1,56 +1,159 @@
 
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b1220;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-  max-width: 750px;
-  margin: auto;
-  padding: 20px;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8f6;
+  color: #172b25;
 }
 
 header {
+  background: #102c25;
+  color: white;
   text-align: center;
-  background: #142c4e;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 30px 15px;
 }
 
-h1 {
-  color: #38bdf8;
+header h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #a8d8c2;
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+nav {
+  background: #194438;
+  padding: 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(135deg, #102c25, #28745b);
+  color: white;
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #d5e9df;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  background: #b5e8cb;
+  color: #102c25;
+  padding: 13px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 28px;
+  font-size: 28px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #176044;
+}
+
+.card p {
+  margin-bottom: 20px;
 }
 
 button {
-  background: #087eaf;
+  background: #176044;
   color: white;
   border: none;
-  padding: 12px 20px;
-  margin: 5px;
-  border-radius: 8px;
+  padding: 12px 25px;
+  border-radius: 7px;
   cursor: pointer;
+  font-size: 15px;
 }
 
-.chapter {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: #1e293b;
-  margin: 8px 0;
+button:hover, .btn:hover {
+  opacity: 0.85;
 }
 
-#notes {
-  background: #172338;
-  padding: 18px;
-  margin-top: 20px;
+#chapterList {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 25px;
   border-radius: 12px;
-  line-height: 1.7;
 }
 
-#notes h2 {
-  color: #38bdf8;
+footer {
+  background: #102c25;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 29px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 
