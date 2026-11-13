@@ -71,3 +71,14 @@ function showNotes(chapter) {
     <button onclick="showClass(12)">Back to Class 12</button>
   `;
 }
+
+// NEET SCRIPT - Chapter Notes Feature
+function openChapterNotes(chapterName) {
+  const chapterArea = document.getElementById("chapterList");
+
+  chapterArea.innerHTML = `
+    <h2>${chapterName}</h2>
+    <p>Welcome to NEET SCRIPT Notes.</p>
+    <p>NCERT-based notes will be available here.</p>
+  `;
+}
