@@ -56,8 +56,8 @@ function showClass(classNumber) {
     button.style.margin = "10px 0";
 
     button.onclick = function() {
-      showNotes(chapter);
-    };
+  openChapterNotes(chapter);
+};
 
     list.appendChild(button);
   });
