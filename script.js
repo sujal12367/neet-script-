@@ -63,15 +63,6 @@ function showClass(classNumber) {
   });
 }
 
-openChapterNotes(chapter);
-  document.getElementById("chapterList").innerHTML = `
-    <h2>${chapter}</h2>
-    <p>Notes for this chapter will be added soon.</p>
-    <br>
-    <button onclick="showClass(12)">Back to Class 12</button>
-  `;
-}
-
 // NEET SCRIPT - Chapter Notes Feature
 function openChapterNotes(chapterName) {
   const chapterArea = document.getElementById("chapterList");
